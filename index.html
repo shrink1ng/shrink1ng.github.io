@@ -28,6 +28,20 @@
 
     /* 你的其他样式可以在这里添加 */
   </style>
+  <style>
+    /* 自定义 GIF 样式 */
+    #animatedGif {
+      position: absolute;
+      top: 50%;
+      left: 90%;
+      transform: translate(-50%, -50%);
+      width: 300px; /* 设置 GIF 宽度 */
+      
+    }
+    h1 {
+      color: #c6625b; /* 使用十六进制颜色码，你可以根据需要更改颜色 */
+    }
+  </style>
 
   <style>
     .image-container {
@@ -57,12 +71,18 @@
         a.button {
           display: inline-block;
           padding: 10px 20px;
-          background-color: #c77d76;
-          color: #8e3737;
+          background-color: rgb(49, 142, 26);
+          color: #7a378e;
           text-decoration: none;
           font-size: 16px;
           border-radius: 5px;
           transition: background-color 0.3s ease;
+
+          position: absolute;
+          top: 70%;
+          left: 20%;
+          transform: translate(-50%, -50%);
+
         }
     
         a.button:hover {
@@ -83,7 +103,7 @@
       <button onclick="showImage('pi/6.jpg')">过年在你家的时候我们一起看电影</button>
       <button onclick="showImage('pi/5.jpg')">拍了一张美美的照</button>
       <button onclick="showImage('pi/7.jpg')">你的爱就像丘比特的箭射进我的心里</button>
-    
+      <img id="animatedGif" src="pi/13.gif" alt="动态图" />
       <img id="myImage" src="" alt="描述图像的文字" height="300px">
     
       <script>
