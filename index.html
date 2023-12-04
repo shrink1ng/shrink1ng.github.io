@@ -1,38 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我爱你邓彩阓</title>
+  <style>
+    body {
+      /* 设置背景颜色 */
+      background-color: #f0f0f0;
+
+      /* 设置背景图片 */
+      background-image: url('pi/12.jpg');
+
+      /* 设置背景平铺方式 */
+      background-repeat: no-repeat; /* 不重复 */
+      background-size: cover; /* 覆盖整个屏幕，保持宽高比 */
+
+      /* 设置背景位置 */
+      background-position: center center; /* 居中对齐 */
+
+      /* 或者使用简写形式： */
+      /* background: #f0f0f0 url('your-image-url.jpg') no-repeat center center / cover; */
+    }
+
+    /* 你的其他样式可以在这里添加 */
+  </style>
+
+  <style>
+    .image-container {
+      position: relative;
+    }
+
+    .centered-image {
+      position: absolute;
+      top: 20%;
+      left: 10%;
+      transform: translate(-50%, 80%); 
+    }
+    </style>
+
+    <style>
+        /* 隐藏图片的初始状态 */
+        #myImage {
+          display: none;
+          position: absolute;
+          top: 20%;
+          left: 80%;
+          transform: translate(-50%, -50%);
+        }
+      </style>
+      <style>
+        /* 自定义按钮样式 */
+        a.button {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #c77d76;
+          color: #8e3737;
+          text-decoration: none;
+          font-size: 16px;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+        }
+    
+        a.button:hover {
+          background-color: #75bff0;
+        }
+      </style>
 </head>
 <body>
- <center>
-        <h1>费曼学习法：为何被称为史上最牛的学习法</h1><p></p>
-    <img src="res/5.png" alt="加载失败" title="问号" width="600px">
-    <p>大学的时候，不知道什么狗屎运，突然就和朋友决定了写作。</p>
+
+    <div class="image-container">
+        <img class="centered-image" src="pi/2.jpg" alt="描述图像的文字" height="300px">
+    </div>
+
+    <body>
+      <a href="pi/12.mp4" class="button">听话，最后才能点我哦</a>
+
+      <button onclick="showImage('pi/3.jpg')">那天我们在学校散步</button>
+      <button onclick="showImage('pi/6.jpg')">过年在你家的时候我们一起看电影</button>
+      <button onclick="showImage('pi/5.jpg')">拍了一张美美的照</button>
+      <button onclick="showImage('pi/7.jpg')">你的爱就像丘比特的箭射进我的心里</button>
     
-    <p>我当时还不知道，它将给两年后的我带去多大的成长。</p>
+      <img id="myImage" src="" alt="描述图像的文字" height="300px">
     
-    <p>那时就是单纯的想分享自己的所思所想，最多加上个人IP的传播。现在看来，IP是由时间、运气和
-        <br>能力决定的，但是成长才是最大的意外之喜。</p>
+      <script>
+        // JavaScript 代码
+        function showImage(imageSrc) {
+          var image = document.getElementById("myImage");
+          image.src = imageSrc;
     
-    <p>
-        后来接触的东西多了之后，我才明白这叫输入输出，<strong>输入帮助输出，输出倒逼输入。</strong>
-        
-    </p>
-    <p>再后来，我听《吴伯凡认知方法论》的时候才恍然大悟，它的背后其实就是费曼学习法。</p>
-    
-    <p>从此，我就在心里做了个决定，我要写一辈子。</p>
-    
-    <p>经常会有读者来询问我的五维学习法，其中一维就是这个费曼学习法（有的人叫它费曼技巧）。</p>
-    <img src="res/6.png" alt="加载失败" width="600px">
-    <ol cneter>
-        <li>第一步</li>
-        <li>第二步</li>
-        <li>第三步</li>
-        <li>第四步</li>
-    </ol>
-    
- </center>
+          // 显示图片
+          image.style.display = "block";
+        }
+      </script>
+
+    <center>
+           <h1>今天是我们在一起四周年的日子</h1><p></p><!--标题h1最大  -->
+       <img src="pi/9.jpg" alt="加载失败" title="问号" width="600px">
+       <p>那天你捏了我的脸，我就知道我好像喜欢上了你，直到后来春游一对，门口你撞进我的怀里</p>
+       <p>那时我就知道我喜欢上了你，我和你表白，你同意了我那夜彻夜难眠，早上五点多就醒了，我满脑子都是你</p>
+       <p>缘分让我们在一起，不离不弃</p>
+       <p>虽然我有时候很幼稚，有时候很笨拙，但我对你的爱一直没变过，和你谈恋爱吃了很多醋，没关系那是爱你的表现
+       <br>现在的我越来越成熟不知道你是否还喜欢</p>
+       <p>我展望未来，我努力学习，一句爱你是一辈子，我要对你负责到底，我不知道什么是恋爱脑，我只知道要对你好<br>
+       <strong>我喜欢你，就像春风走了十万八千里，不问归期</strong></p>
+       <p>再后来，我们上了大学，天各一方，我期盼你的电话和消息，我每天都很想你，异地恋确实很难</p>
+       <p>但是我相信，爱能超越距离，于是我每天想你，做梦也梦见你，我相信有情人终成眷属</p>
+       <p><strong>再说了我们可不是一般的情人</strong></p>
+       <p>我们在一起的点点滴滴，就像天上的星星一样在我心中永远闪烁</p>
+       <p>我想和你有个家，我们一起散步，一起打游戏，一起做饭，一起做很多很多东西</p>
+       <img src="pi/8.jpg" alt="加载失败" width="300px">
+       
+    </center>
 </body>
 </html>
